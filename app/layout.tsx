@@ -31,12 +31,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${roboto.variable}  antialiased`}
+        className={`${roboto.variable} no-scrollbar overflow-hidden antialiased`}
       >
-        <div className="h-screen bg-gray-100">
+        <div className="h-screen bg-gray-100 no-scrollbar">
             <Header />
-          <main className="h-[calc(100vh-70px)] overflow-auto snap-y snap-mandatory max-w-3xl mx-auto my-5">
+          <main className="h-[calc(100vh-70px)] overflow-auto snap-y snap-mandatory max-w-md mx-auto my-1 no-scrollbar">
             {children}
+            
 
           </main>
 
